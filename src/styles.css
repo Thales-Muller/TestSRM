@@ -1,0 +1,210 @@
+/* 
+* ============================================
+                  Sidebar
+* ============================================          
+*/
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 210px;
+    height: 100%;
+    text-align: left;
+    background: #00233D;
+    color: #fff;
+    z-index: 1;
+    overflow-y: auto;
+}
+
+.sidebar .sidenav-search {
+    background: #fff !important;
+    border-right:  3px solid #C1C1C1;
+    height: 65px;
+}
+
+.sidebar li {
+    position: relative;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.sidebar li a {
+    position: relative;
+    font-size: 0.9em;
+    font-weight: 300;
+    color: #fff;
+    text-decoration: none;
+    width: 100%;
+    border-bottom: 1.1px solid #4997D1;
+}
+  
+.sidebar li a .image-navbar{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding: 7px 10px;
+}
+
+.sidebar li a .icone-navbar{
+    padding-left: 5px;
+}
+
+.sidebar li a:hover {
+    color: #4997D1;
+    text-decoration: none;
+ }
+  
+ /*
+.sidebar li a[data-toggle="collapse"]::before {
+    content: '\f104';
+    display: inline-block;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-family: 'FontAwesome';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+}
+  
+.sidebar li a[aria-expanded="true"]::before {
+    content: '\f107';
+    color: #fff;
+}
+*/
+.sidebar li ul a {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding-top: 7px;
+    padding-right: 0px;
+    padding-bottom: 7px;
+    padding-left: 10px;
+}
+
+.sidebar li ul.collapse a {
+    border-left: 5px solid #4997D1; 
+}
+
+.sidebar li ul.collapse a:hover {
+    color: #4997D1;
+    text-decoration: none;
+}
+ 
+.sidebar span {
+    display: inline-block;
+}
+  
+.activeMenu{
+    height:30px;
+    line-height:32px;
+    display:block;
+    border-style: solid;
+    border-width: 16px 16px 16px 16px;
+    border-color:  transparent #EBEBEB transparent transparent;
+    float: right;
+}
+/* ========================================= */
+
+/*
+* ============================================
+                  Main Navbar
+* ============================================          
+*/
+nav.navbar{
+    background: #fff;
+    height: 65px;
+}
+
+nav.navbar .sidebar-wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+nav.navbar .side-navbar-wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+nav.navbar .container-fluid {
+    width: 100%;
+}
+
+nav.navbar .navbar-holder {
+    width: 100%;
+    vertical-align: middle;
+}
+
+
+.navbar-header{
+    display: flex;
+}
+/* ========================================= */
+
+/*
+* ============================================
+                  Page
+* ============================================          
+*/
+.page{
+    position: absolute;
+    top: 0;
+    right: 0;
+    -webkit-transition: width 0.3s linear;
+    transition: width 0.3s linear;
+    width: calc(100% - 210px);
+    background-color:#EBEBEB;
+    min-height: 100vh;
+    padding-bottom: 50px;
+}
+
+.breadcrumb{
+    color: #404E67;
+    margin: 0px !important;
+}
+
+.titlePage{
+    color: #00233D;
+    font-size: 2em;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.card {
+    background-color: #fff;
+    border: 0 solid #eee;
+    border-radius: 0 !important;
+    box-shadow:   0 0 10px 4px #C9C9C9;
+    -moz-box-shadow:   0 0 10px 4px #C9C9C9;
+    -webkit-box-shadow: 0 0 10px 4px #C9C9C9;
+    height: 130%;
+}
+
+.card-header{
+   border-bottom: 1px solid #C1C1C1 !important;
+   background-color: #fff !important;
+   font-size: 1.2em;
+   padding-bottom: 10px;
+}
+
+.card-body{
+    padding: 0 1.25rem 1.25rem 1.25rem !important;
+}
+
+hr{
+    border-top: 1px solid #C1C1C1 !important;
+    display: block;
+    unicode-bidi: isolate;
+    margin-block-start: 0.5em !important;
+    margin-block-end: 0.5em !important;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+}
+
+select { text-align-last:center; }
+/* ========================================= */

@@ -1,0 +1,88 @@
+.borderBox{
+    border: 1.1px solid #4997D1;
+    text-align: center;
+    padding: 5px;
+    margin: 6px 11px;
+    max-width:80%;
+    color: #626262;
+}
+
+.borderSelect1{
+    display: block;
+    width: 100%;
+    height: calc(2.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 0.9em;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #626262;
+    background-clip: padding-box;
+    border: 1.1px solid #4997D1;
+    text-align: center;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    -webkit-appearance:none;
+    -moz-appearance:    none;
+    appearance:         none;
+    background: url("../../../assets/img/arrow1.png") 95.5% 50% no-repeat;
+}
+
+.borderSelect2{
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 0.9em;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #626262;
+    background-clip: padding-box;
+    border: 1.1px solid #4997D1;
+    text-align: center;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    -webkit-appearance:none;
+    -moz-appearance:    none;
+    appearance:         none;
+    background: url("../../../assets/img/arrow2.png") 95.5% 50% no-repeat;
+}
+
+
+.paddingTop{
+    padding-top: 25px;
+}
+
+.paddingBot{
+    padding-bottom: 10px;
+}
+
+.paddingBot2{
+    padding-bottom: 20px;
+}
+
+.paddingLeft{
+    padding-left: 10px;
+}
+
+.font1{
+    font-size: 0.9em;
+}
+
+.font2{
+    font-size: 0.8em;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.verticalCenter{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+@media (min-width: 576px){
+    .col-sm-6 {
+        flex: 0 0 50%;
+        max-width: 44%;
+    }
+}

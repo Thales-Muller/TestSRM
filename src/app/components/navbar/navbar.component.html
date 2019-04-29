@@ -1,0 +1,79 @@
+<header class="header">
+  <nav class="navbar">
+    <div class="container-fluid">
+      <div class="navbar-holder">
+
+        <div class="row d-flex">
+
+          <div class="col-4">
+            <!-- Logo -->
+            <div class="col-4 mr-auto p-0">
+              <div class="navbar-header">
+                <a [routerLink]="['/painel-gestao']">
+                  <img src="../../../assets/img/logo.PNG" height="auto;" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-8 ">
+            <div class="row d-flex justify-content-end">
+              <!-- Group-->
+              <div class="col-6 offset-1">
+                <div class="row d-flex justify-content-end">
+                  <div class="col-5 pr-0 ">
+                    <span class="group">
+                      Grupo Econômico:
+                    </span>
+                  </div>
+                  <div class="col-7 pl-0">
+                    <select class="borderSelect1" style="float: right;">
+                      <option value="1" (click)="selectVision(1)">Visão Agregada 1</option>
+                      <option value="2" (click)="selectVision(2)">Visão Agregada 2</option>
+                      <option value="3" (click)="selectVision(3)">Visão Agregada 3</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Profile & Alerts -->
+              <div class="col-5">
+                <div class="row d-flex justify-content-end">
+                  <div class="dropdown btn-group mr-0 pl-0">
+                    <button class="btn btn-secondary btn-lg rounded-0 profile" type="button" id="profile"
+                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="pi pi-user pl-1"></i> {{ name }} <img src="../../../assets/img/arrow4.png">
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="profile">
+                      <a class="dropdown-item" href="#">Editar Perfil</a>
+                      <a class="dropdown-item" href="#">Configurações</a>
+                      <hr />
+                      <a class="dropdown-item" href="#">Sair</a>
+                    </div>
+                  </div>
+
+                  <div class="dropdown btn-group ml-0 pl-0 dropleft">
+                    <button class="btn btn-secondary btn-lg rounded-0 alertProfile" type="button" id="alert"
+                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="pi pi-bell">
+                        <span *ngIf="showAlert()" class="badge badge-pill badge-danger badge-default badge-up"
+                          (click)="eventAlert()">
+                          {{numberAlert()}}
+                        </span>
+                      </i>
+                    </button>
+                    <div *ngIf="showAlert()" class="dropdown-menu" aria-labelledby="alert">
+                      <div *ngFor="let a of alerts" class="dropdown-item btn"  (click)="eventAlert(a)" >{{a}}</div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>

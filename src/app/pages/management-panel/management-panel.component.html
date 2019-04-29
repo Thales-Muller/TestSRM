@@ -1,0 +1,162 @@
+<section>
+  <div class="container-fluid">
+    <div class="col-lg-12">
+
+      <!-- Localization-->
+      <div class="row">
+        <small class="breadcrumb">
+          Página inicial > {{page}}
+        </small>
+      </div>
+
+      <!-- Title of the Page-->
+      <div class="row paddingBot2">
+        <!-- Image & Page -->
+        <div class="col-6">
+          <img src="../../../assets/img/page1.png" height="50" alt="">
+          <span class="titlePage">{{page}}</span>
+        </div>
+        <!-- Select Product-->
+        <div class="col-6">
+          <div class="row">
+            <div class="col-5 offset-1 text-right">
+              <span class="font1 verticalCenter pr-5">
+                Produto:
+              </span>
+            </div>
+            <div class="col-5 offset-1">
+              <select class="borderSelect1">
+                <option value="">Todos</option>
+                <option value="1" (click)="selectProduct(1)">Produto 1</option>
+                <option value="2" (click)="selectProduct(1)">Produto 2</option>
+                <option value="3" (click)="selectProduct(1)">Produto 3</option>
+                <option value="4" (click)="selectProduct(1)">Produto 4</option>
+                <option value="5" (click)="selectProduct(1)">Produto 5</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Content -->
+      <div class="row paddingTop">
+
+        <!-- Block 1-->
+        <div class="col-lg-7 col-sm-7">
+          <div class="card">
+            <!-- Header -->
+            <div class="card-header d-flex justify-content-between bd-highlight">
+              <span class="p-2 bd-highlight align-middle">Atalhos</span>
+            </div>
+            <!-- Components -->
+            <div class="card-body">
+              <div class="row">
+
+                <!-- Component 1 -->
+                <div class="col-lg-8 col-sm-8">
+                  <!-- Title -->
+                  <div class="row paddingTop">
+                    <span class="font2">Operacional</span>
+                  </div>
+                  <!-- Row 1 -->
+                  <div class="row">
+                    <div class="col-lg-6 col-sm-6 borderBox">
+                      <span class="font1 ">Envio</span>
+                    </div>
+                    <div class="col-lg-6 col-sm-6 borderBox">
+                      <span class="font1">Assinatura</span>
+                    </div>
+                  </div>
+                  <!-- Row 2 -->
+                  <div class="row">
+                    <div class="col-lg-6 col-sm-6 borderBox">
+                      <span class="font1">Envio de Duplicatas</span>
+                    </div>
+                    <div class="col-lg-6 col-sm-6 borderBox">
+                      <span class="font1">Assinatura Digital</span>
+                    </div>
+                  </div>
+                  <!-- Row 3 -->
+                  <div class="row">
+                    <div class="col-lg-6 col-sm-6 borderBox">
+                      <span class="font1">Nova Operação</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Component 2 -->
+                <div class="col-lg-4 col-sm-4 " style="border-left:  1px solid #C1C1C1;">
+                  <!-- Title -->
+                  <div class="row paddingTop">
+                    <span class="font2">Geral</span>
+                  </div>
+                  <!-- Row 1 -->
+                  <div class="row justify-content-center">
+                    <div class="col-lg-12 col-sm-12 borderBox">
+                      <span class="font1">Carteira</span>
+                    </div>
+                    <div class="col-lg-12 col-sm-12 borderBox">
+                      <span class="font1">Instruções</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Block 2 -->
+        <div class="col-lg-5 col-sm-5">
+          <div class="card">
+            <!-- Header -->
+            <div class="card-header d-flex justify-content-between bd-highlight ">
+              <span class="p-2 bd-highlight align-middle" style="color: #4997D1;">Alertas</span>
+              <span class="p-2 bd-highlight align-middle"
+                style="font-size: 70%; font-weight: 400;">Últimos 5 dias</span>
+            </div>
+            <!-- Components -->
+            <div class="card-body">
+              <!-- Row 1 -->
+              <div class="row">
+                <div class="col-lg-6 col-sm-6 paddingTop paddingBot">
+                  <span class="font1">23 Notas Canceladas</span>
+                </div>
+              </div>
+
+              <hr>
+
+              <!-- Row 2 -->
+              <div class="row">
+                <div class="col-lg-7 col-sm-7">
+                  <span class="font1">13 Notas Canceladas</span>
+                </div>
+                <div class="col-lg-5 col-sm-5  d-flex justify-content-end">
+                  <select class="borderSelect2">
+                    <option value="Ações">Ações</option>
+                    <option *ngFor="let a of actions" [value]="a" (click)="selectAction1(a)">{{a}}</option>
+                  </select>
+                </div>
+              </div>
+
+              <hr>
+
+              <!-- Row 1 -->
+              <div class="row">
+                <div class="col-lg-7 col-sm-7">
+                  <span class="font1">7 Assinaturas Digital</span>
+                </div>
+                <div class="col-lg-5 col-sm-5  d-flex justify-content-end">
+                  <select class="borderSelect2">
+                    <option value="Ações">Ações</option>
+                    <option *ngFor="let a of actions" [value]="a" (click)="selectAction2(a)">{{a}}</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

@@ -1,0 +1,25 @@
+.textSearch{
+    height: 65px;
+}
+
+.btnSearch{
+    color: #C1C1C1;
+    height: 65px;
+}
+
+
+input::-webkit-input-placeholder {
+    text-align: right;
+}
+
+input:-moz-placeholder {
+    text-align: right;
+}
+
+input::-moz-placeholder {
+    text-align: right;
+}
+
+input:-ms-input-placeholder {
+    text-align: right;
+}
